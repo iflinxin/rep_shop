@@ -1,0 +1,4 @@
+# robots.txt for xiaohe
+
+User-agent: *
+Sitemap: /sitemap/index.xml
