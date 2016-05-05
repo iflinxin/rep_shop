@@ -2,8 +2,5 @@
 /applicationContext-shiro.xml
 /applicationContext.xml
 /ehcache.xml
-/init/
 /logback.xml
 /net/
-/shopxx.properties
-/shopxx.xml
