@@ -123,7 +123,7 @@ public class UnionpayPaymentPlugin extends PaymentPlugin {
 		parameterMap.put("orderId", sn);
 		parameterMap.put("txnTime", DateFormatUtils.format(new Date(), "yyyyMMddHHmmss"));
 		parameterMap.put("accessType", "0");
-		parameterMap.put("orderTimeout", "10080000");
+		//parameterMap.put("orderTimeout", "10080000");
 		parameterMap.put("frontUrl", getNotifyUrl(PaymentPlugin.NotifyMethod.sync));
 		parameterMap.put("backUrl", "http://wwww.specialurl.com/");//为了统一其他的支付平台，不想让银联通知我，由我主动去查询
 		Map<String, String> submitStringData = AcpService.sign(parameterMap,getRequestCharset());  //报文中certId,signature的值是在signData方法中获取并自动赋值的，只要证书配置正确即可。
